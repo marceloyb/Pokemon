@@ -28,22 +28,17 @@ public class Humano extends Jogador {
         switch (scan.nextInt()){
             case 1:
                 return 0;
-
             case 2:
                 return 1;
-
             case 3:
-                for (Pokemon i: jogador) {
+                for (Pokemon i: jogador)
                     i.setStatus(Status.FAINTED);
-                }
                 return 2;
-
             default:
                 System.out.println(RED + "Escolha um comando valido." + RESET);
                 escolherComando(jogador);
                 break;
         }
-
         System.out.println("nem");
         return 0;
     }
@@ -53,15 +48,15 @@ public class Humano extends Jogador {
         int i = 0;
         Scanner scan = new Scanner(System.in);
         System.out.println(BLUE + "Qual posiçao deseja trocar?" + RESET);
-        for (Pokemon p: poke) {
+        for (Pokemon p: poke)
             System.out.println(YELLOW + p.getNome() + ", " + p.getStatus() + " " + i++ + RESET);
-        }
+        
         i = scan.nextInt();
         if(i < 0 || i > poke.size() - 1) {
             System.out.println(RED + "Escolha uma posiçao valida" + RESET);
             trocarPokemon(poke);
         }
-        else{
+        else {
             if(poke.get(i).getStatus().toString().equals("FAINTED")){
                 System.out.println(RED + "Esse Pokemon nao esta em condiçoes de batalhar." + RESET);
                 trocarPokemon(poke);
