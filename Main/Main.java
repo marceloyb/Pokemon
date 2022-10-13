@@ -159,7 +159,7 @@ public class Main {
                         morto2 = false;
                 }
                 if(morto2) {
-                    System.out.println(RED+"O jogador 2 nao possuiu pokemons aptos para a batalha."+RESET);
+                    System.out.println(RED+"O jogador 2 nao teve pokemons aptos para a batalha."+RESET);
                     terminaJogo(1, treta);
                 }
             }
@@ -218,7 +218,7 @@ public class Main {
                         morto1 = false;
                 }
                 if(morto1) {
-                    System.out.println(RED+"O jogador 1 nao possuiu pokemons aptos para a batalha."+RESET);
+                    System.out.println(RED+"O jogador 1 nao teve pokemons aptos para a batalha."+RESET);
                     terminaJogo(2, treta);
                 }
             }
@@ -276,7 +276,7 @@ public class Main {
                         morto2 = false;
                 }
                 if(morto2) {
-                    System.out.println(RED+"O jogador 2 nao possuiu pokemons aptos para a batalha."+RESET);
+                    System.out.println(RED+"O jogador 2 nao teve pokemons aptos para a batalha."+RESET);
                     terminaJogo(1, treta);
                 }
             }
@@ -334,7 +334,7 @@ public class Main {
                         morto1 = false;
                 }
                 if(morto1) {
-                    System.out.println(RED+"O jogador 1 nao possuiu pokemons aptos para a batalha."+RESET);
+                    System.out.println(RED+"O jogador 1 nao teve pokemons aptos para a batalha."+RESET);
                     terminaJogo(2, treta);
                 }
             }
@@ -396,7 +396,7 @@ public class Main {
         treta.getListPokemon1().get(0).showStatus(treta.getListPokemon1(), 1);
         treta.getListPokemon2().get(0).showStatus(treta.getListPokemon2(), 2);
         System.out.println();
-        System.out.println(GREEN + "Paraben Jogador " + jogador + ", voce ganhou o jogo!!" + RESET);
+        System.out.println(GREEN + "Parabens Jogador " + jogador + ", voce ganhou o jogo!!" + RESET);
         System.exit(0);
     }
 
@@ -435,7 +435,7 @@ public class Main {
         System.out.println(BLUE + "O time um e formado dos seguintes Pokemons: " + RESET);
         for(int i = 0; i < treta.getListPokemon1().size(); i ++)
             System.out.println(treta.getListPokemon1().get(i).getNome());
-        System.out.println(CYAN + "Esta satisfeito com esse time?" + RESET);
+        System.out.println(CYAN + "Voce esta satisfeito com esse time?" + RESET);
         if(input.nextInt() == 0) {
             for (int i = treta.getListPokemon1().size() - 1; i >=0; i--)
                 treta.getListPokemon1().remove(i);
@@ -462,7 +462,7 @@ public class Main {
         System.out.println(BLUE + "O time dois e formado dos seguintes Pokemons: " + RESET);
         for(int i = 0; i < treta.getListPokemon2().size(); i ++)
             System.out.println(treta.getListPokemon2().get(i).getNome());
-        System.out.println(CYAN + "Esta satisfeito com esse time?" + RESET);
+        System.out.println(CYAN + "Voce esta satisfeito com esse time?" + RESET);
         if(input.nextInt() == 0) {
             for (int i = treta.getListPokemon2().size() - 1; i >= 0; i--)
                 treta.getListPokemon2().remove(i);
