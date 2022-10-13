@@ -43,7 +43,8 @@ public class Batalha {
         int i = 0, j = 0;
 
         try {
-            conteudoCsv = new BufferedReader(new FileReader(arq));//abre arquivo e cria objeto
+            // abre arquivo e cria objeto
+            conteudoCsv = new BufferedReader(new FileReader(arq));
             while ((linha = conteudoCsv.readLine()) != null) {
                 String[] camposLidos = linha.split(separador);
                 for (String s : camposLidos) {

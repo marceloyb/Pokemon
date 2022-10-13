@@ -62,10 +62,10 @@ public class Ataque {
         prob = atacante.getAtaque().get(i).getAccuracy() * (tabelaModifier(atacante.getModifierAccuracy()) / tabelaModifier(defensor.getModifierEvasion()));
 
         if (rand.nextInt(100) < prob){
-            System.out.println(YELLOW + "Acertou!" + RESET);
+            System.out.println(YELLOW + "Acertou o ataque!" + RESET);
             return true;
         }else {
-            System.out.println(RED + "Errou!" + RESET);
+            System.out.println(RED + "Errou o ataque!" + RESET);
             return false;
         }
     }
